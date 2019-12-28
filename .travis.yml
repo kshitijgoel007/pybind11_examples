@@ -13,6 +13,7 @@ matrix:
   include:
     - env: UPSTREAM_WORKSPACE=debian ROS_DISTRO=kinetic ROS_PYTHON_VERSION=2
     - env: UPSTREAM_WORKSPACE=debian ROS_DISTRO=melodic ROS_PYTHON_VERSION=2
+  allow_failures:
     - env: UPSTREAM_WORKSPACE=debian ROS_DISTRO=melodic ROS_PYTHON_VERSION=3 ROS_FROM_SCRATCH=true
     - env: UPSTREAM_WORKSPACE=debian ROS_DISTRO=noetic
 install:
